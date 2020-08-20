@@ -74,7 +74,7 @@ class Contact extends Component{
                      </FormGroup>
                      <FormGroup row>
                      
-                         <Col md={{size: 3, offset: 1}}>
+                         <Col md={{size: 2, offset: 2}}>
                              <Input type="select" name="year"
                                      value={this.state.year}
                                      onChange={this.handleInputChange}>
@@ -89,7 +89,7 @@ class Contact extends Component{
                          <Label htmlFor="message" md={2}>Why want to join?</Label>
                          <Col md={10}>
                              <Input type="textarea" id="message" name="message"
-                                 rows="12"
+                                 rows="6"
                                  value={this.state.message}
                                  onChange={this.handleInputChange}></Input>
                          </Col>
@@ -98,7 +98,7 @@ class Contact extends Component{
                          <Label htmlFor="projects" md={2}>Mention your projects</Label>
                          <Col md={10}>
                              <Input type="textarea" id="projects" name="projects"
-                                 rows="12"
+                                 rows="6"
                                  value={this.state.projects}
                                  onChange={this.handleInputChange}></Input>
                          </Col>
