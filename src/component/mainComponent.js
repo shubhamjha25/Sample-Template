@@ -4,6 +4,7 @@ import Header from './HeaderComponent';
 import { Switch, Route } from 'react-router-dom';
 import Footer from './FooterComponet';
 import About from './AboutComponent';
+import Contact from './ContactComponent';
 class Main extends Component{
     render()
     {
@@ -17,6 +18,11 @@ class Main extends Component{
                 <About/>
             )
         }
+        const ContactPage = () => {
+            return(
+                <Contact/>
+            )
+        }
 
 
         return(
@@ -25,6 +31,7 @@ class Main extends Component{
                 <Switch>
                     <Route exact path="/home" component={HomePage}/>
                     <Route exact path="/aboutus" component={AboutPage}/>
+                    <Route exact path="/contactus" component={ContactPage}/>
                 </Switch>
                 <Footer/>
             </div>
