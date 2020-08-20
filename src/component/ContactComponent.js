@@ -88,8 +88,7 @@ class Contact extends Component{
                      <FormGroup row>
                          <Label htmlFor="message" md={2}>Why want to join?</Label>
                          <Col md={10}>
-                             <Input type="textarea" id="message" name="message"
-                                 rows="6"
+                             <Input type="textarea" id="message" name="message" rows="6"
                                  value={this.state.message}
                                  onChange={this.handleInputChange}></Input>
                          </Col>
